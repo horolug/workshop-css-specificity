@@ -1,0 +1,27 @@
+/* please add your css overrides here ... */
+
+div div {
+  border: none;
+}
+
+
+.info {
+  font-weight: bold;
+  background: #5bc0de;
+}
+
+
+input[type="number"] {
+  font-weight: normal;
+}
+
+
+
+
+
+li:first-child {
+  background: grey;
+}
+li.lastname {
+  background: red;
+}
