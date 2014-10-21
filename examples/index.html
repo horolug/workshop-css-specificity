@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset='utf-8'>
+  <title>Examples</title>
+  <style>
+  #red {
+    background: purple;
+  }
+  input:first-child {
+    background: yellow;
+  }
+  input[type="text"] {
+    background: blue;
+    border: 3px solid red;
+  }
+  input:first-child {
+    border: 3px solid black;
+  }
+  span:first-child {
+    background: yellow;
+  }
+  .green {
+    background: green;
+  }
+  div {
+    background: grey;
+  }
+  </style>
+</head>
+<body>
+
+  <h1>Examples</h1>
+
+
+  <ol>
+    <li>
+      <p>Class is more specific than an element</p>
+      <div>Div1</div>
+      <div class="green">Div2</div>
+    </li>
+    <li>
+      <p>Pseudo-class  or attribute is more specific than a class</p>
+      <div>
+        <span class="green">span 3</span>
+        <span class="green">span 4</span>
+      </div>
+    </li>
+    <li>
+      <p>Attribute and pseudo class are equal in specificity</p>
+      <div>
+        <input type="text" value="input 1"><br>
+        <input type="text" value="input 2">
+      </div>
+      <div>
+        <input type="text" value="input 3"><br>
+        <input type="text" value="input 4">
+      </div>
+    </li>
+    <li>
+      <p>ID is more specific than a pseudo-class</p>
+      <input type="text" id="red" value="input 5"><br>
+      <input type="text" value="input 6">
+    </li>
+  </ol>
+
+</body>
+</html>
